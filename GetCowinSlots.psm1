@@ -1,4 +1,4 @@
-﻿function GetCowinSlots {
+function GetCowinSlots {
 
 <#
 .SYNOPSIS
@@ -43,6 +43,8 @@
                     Date	= $slot.date
                     FeeType	= $slot.fee_type
                     Fee		= $slot.fee
+                    Dose1	= $slot.available_capacity_dose1
+                    Dose2	= $slot.available_capacity_dose2
                     Slots	= $slot.slots
                 }
             }
