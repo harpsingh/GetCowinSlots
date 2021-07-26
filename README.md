@@ -1,5 +1,5 @@
 # GetCowinSlots
-Fetches list of available vaccination slots in India based on area pin code provided. It uses the public API for https://www.cowin.gov.in
+I know you can always use https://www.cowin.gov.in but I wanted to write a script which uses the publicly available API to fetch list of available vaccination slots in India based on area pin code provided.
 
 # How to use
 - Download the file GetCowinSlots.psm1
