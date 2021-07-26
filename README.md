@@ -16,16 +16,16 @@ GetCowinSlots -PinCode 110001 -Days 3
 PS C:\> GetCowinSlots -PinCode 400011 -Days 2
 Slots found!!
 
-Name                           Address                                                                 Vaccine    Date       FeeType Fee  Slots
-----                           -------                                                                 -------    ----       ------- ---  -----
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVISHIELD 28-07-2021 Paid    780  {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVAXIN    28-07-2021 Paid    1410 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVISHIELD 28-07-2021 Paid    780  {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Meesha Diagnostic And Polyclin 1 St Floor La View Building B J Marg Jacob Circle Mahalaxmi East Mumbai COVAXIN    28-07-2021 Paid    1200 {12:00PM-01:00PM, 01:00PM-02:00PM, 02:00PM-03:00PM, 03:00PM-05:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVAXIN    28-07-2021 Paid    1410 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVAXIN    29-07-2021 Paid    1410 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVISHIELD 29-07-2021 Paid    780  {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Meesha Diagnostic And Polyclin 1 St Floor La View Building B J Marg Jacob Circle Mahalaxmi East Mumbai COVAXIN    29-07-2021 Paid    1200 {12:00PM-01:00PM, 01:00PM-02:00PM, 02:00PM-03:00PM, 03:00PM-05:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVAXIN    29-07-2021 Paid    1410 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
-Wockhardt Hospital Mum-Central Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             COVISHIELD 29-07-2021 Paid    780  {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Name                           Vaccine    Address                                                                 Date       FeeType Fee  Dose1 Dose2 Slots
+----                           -------    -------                                                                 ----       ------- ---  ----- ----- -----
+Wockhardt Hospital Mum-Central COVISHIELD Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             28-07-2021 Paid    780     97   175 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Wockhardt Hospital Mum-Central COVAXIN    Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             28-07-2021 Paid    1410   197    90 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Wockhardt Hospital Mum-Central COVISHIELD Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             28-07-2021 Paid    780     91   666 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Meesha Diagnostic And Polyclin COVAXIN    1 St Floor La View Building B J Marg Jacob Circle Mahalaxmi East Mumbai 28-07-2021 Paid    1200    44    50 {12:00PM-01:00PM, 01:00PM-02:00PM, 02:00PM-03:00PM, 03:00PM-05:00PM}
+Wockhardt Hospital Mum-Central COVAXIN    Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             28-07-2021 Paid    1410   198    99 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Wockhardt Hospital Mum-Central COVAXIN    Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             29-07-2021 Paid    1410   196    97 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Wockhardt Hospital Mum-Central COVISHIELD Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             29-07-2021 Paid    780     94   188 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Meesha Diagnostic And Polyclin COVAXIN    1 St Floor La View Building B J Marg Jacob Circle Mahalaxmi East Mumbai 29-07-2021 Paid    1200    48    47 {12:00PM-01:00PM, 01:00PM-02:00PM, 02:00PM-03:00PM, 03:00PM-05:00PM}
+Wockhardt Hospital Mum-Central COVAXIN    Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             29-07-2021 Paid    1410   199    96 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
+Wockhardt Hospital Mum-Central COVISHIELD Wockhardt Hospitals Ltd Dr Anand Rao Nair Road South Mumbai             29-07-2021 Paid    780     88   664 {08:00AM-11:00AM, 11:00AM-02:00PM, 02:00PM-05:00PM, 05:00PM-08:00PM}
 ```
