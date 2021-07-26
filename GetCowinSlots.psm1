@@ -38,8 +38,8 @@ function GetCowinSlots {
             foreach ($slot in $slots.sessions){
                 $slotsCollection += [PSCustomObject]@{
                     Name	= $slot.name
-                    Address	= $slot.address
                     Vaccine	= $slot.vaccine
+                    Address	= $slot.address
                     Date	= $slot.date
                     FeeType	= $slot.fee_type
                     Fee		= $slot.fee
