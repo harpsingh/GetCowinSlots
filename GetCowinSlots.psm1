@@ -12,16 +12,19 @@ function GetCowinSlots {
     Specifies the number of days to query
 
 .EXAMPLE
-     GetCowinSlots -PinCode 110001 -Days 7
+     GetCowinSlots -PinCode 110001 -Days 3
+
+.EXAMPLE
+     GetCowinSlots -PinCode 110001 -Days 3 -Detailed
 
 .NOTES
     Author:  Harprit Singh
 #>
 
     param (
-        [Parameter(Mandatory)][int]$PinCode,
-        [Parameter(Mandatory)][int]$Days,
-        [bool]$WrapOutput
+        [Parameter(Mandatory=$true)][int]$PinCode,
+        [Parameter(Mandatory=$true)][int]$Days,
+        [Parameter(Mandatory=$false)][switch]$Detailed
     )
 
     $startDate = $(Get-Date)
@@ -29,6 +32,7 @@ function GetCowinSlots {
     $dateToQuery = $startDate.AddDays(1)
 
     $slotsCollection = @()
+    $slotsVerbose = @()
 
     while ($dateToQuery -le $endDate)
     {
@@ -39,22 +43,28 @@ function GetCowinSlots {
                 $slotsCollection += [PSCustomObject]@{
                     Name	= $slot.name
                     Vaccine	= $slot.vaccine
-                    Address	= $slot.address
                     Date	= $slot.date
                     FeeType	= $slot.fee_type
                     Fee		= $slot.fee
                     Dose1	= $slot.available_capacity_dose1
                     Dose2	= $slot.available_capacity_dose2
-                    Slots	= $slot.slots
                 }
             }
+
+            $slotsVerbose += $slots.sessions
         }
+
         $dateToQuery = $dateToQuery.AddDays(1)
     }
 
     if ($slotsCollection){
         Write-Host "Slots found!!" -ForegroundColor Green
-        $slotsCollection | Format-Table -AutoSize -Wrap
+        if ($Detailed){
+            $slotsVerbose
+        }
+        else{
+            $slotsCollection | Format-Table -AutoSize -Wrap
+        }
     }
     else{
         Write-Host "No slots found :(" -ForegroundColor Red
