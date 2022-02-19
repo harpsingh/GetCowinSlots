@@ -58,16 +58,15 @@ function GetCowinSlots {
     }
 
     if ($slotsCollection){
-        Write-Host "Slots found!!" -ForegroundColor Green
         if ($Detailed){
-            $slotsVerbose
+            return $slotsVerbose
         }
         else{
-            $slotsCollection | Format-Table -AutoSize -Wrap
+            return $slotsCollection
         }
     }
     else{
-        Write-Host "No slots found :(" -ForegroundColor Red
+        return "No slots found"
     }
 }
 
